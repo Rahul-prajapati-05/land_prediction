@@ -1,0 +1,110 @@
+[
+  {
+    "feature": "City_Mumbai",
+    "coefficient": 22806009.623953413,
+    "formatted_coef": "\u20b9+22,806,009.62",
+    "impact": "Positive"
+  },
+  {
+    "feature": "Property_Type_Penthouse",
+    "coefficient": 14193581.583887601,
+    "formatted_coef": "\u20b9+14,193,581.58",
+    "impact": "Positive"
+  },
+  {
+    "feature": "Area_sqft",
+    "coefficient": 13394807.06563551,
+    "formatted_coef": "\u20b9+13,394,807.07",
+    "impact": "Positive"
+  },
+  {
+    "feature": "City_Delhi",
+    "coefficient": 12255721.042856835,
+    "formatted_coef": "\u20b9+12,255,721.04",
+    "impact": "Positive"
+  },
+  {
+    "feature": "City_Bangalore",
+    "coefficient": 7849541.325005897,
+    "formatted_coef": "\u20b9+7,849,541.33",
+    "impact": "Positive"
+  },
+  {
+    "feature": "Property_Type_Villa",
+    "coefficient": 7713008.866909806,
+    "formatted_coef": "\u20b9+7,713,008.87",
+    "impact": "Positive"
+  },
+  {
+    "feature": "City_Hyderabad",
+    "coefficient": 4228578.7468605535,
+    "formatted_coef": "\u20b9+4,228,578.75",
+    "impact": "Positive"
+  },
+  {
+    "feature": "City_Pune",
+    "coefficient": 3612938.1040086374,
+    "formatted_coef": "\u20b9+3,612,938.10",
+    "impact": "Positive"
+  },
+  {
+    "feature": "City_Chennai",
+    "coefficient": 3382491.999751528,
+    "formatted_coef": "\u20b9+3,382,492.00",
+    "impact": "Positive"
+  },
+  {
+    "feature": "BHK",
+    "coefficient": -2572479.276823696,
+    "formatted_coef": "\u20b9-2,572,479.28",
+    "impact": "Negative"
+  },
+  {
+    "feature": "Property_Type_Independent House",
+    "coefficient": 1571346.753859131,
+    "formatted_coef": "\u20b9+1,571,346.75",
+    "impact": "Positive"
+  },
+  {
+    "feature": "Property_Age",
+    "coefficient": -1104122.1941499067,
+    "formatted_coef": "\u20b9-1,104,122.19",
+    "impact": "Negative"
+  },
+  {
+    "feature": "Bathrooms",
+    "coefficient": 700677.4760244676,
+    "formatted_coef": "\u20b9+700,677.48",
+    "impact": "Positive"
+  },
+  {
+    "feature": "Furnishing_Semi-Furnished",
+    "coefficient": -621613.4232092074,
+    "formatted_coef": "\u20b9-621,613.42",
+    "impact": "Negative"
+  },
+  {
+    "feature": "City_Kolkata",
+    "coefficient": -600210.2024659138,
+    "formatted_coef": "\u20b9-600,210.20",
+    "impact": "Negative"
+  },
+  {
+    "feature": "Furnishing_Unfurnished",
+    "coefficient": -577264.4353607598,
+    "formatted_coef": "\u20b9-577,264.44",
+    "impact": "Negative"
+  },
+  {
+    "feature": "Floors",
+    "coefficient": 482048.162795278,
+    "formatted_coef": "\u20b9+482,048.16",
+    "impact": "Positive"
+  },
+  {
+    "feature": "Parking_Yes",
+    "coefficient": 428910.41403584206,
+    "formatted_coef": "\u20b9+428,910.41",
+    "impact": "Positive"
+  }
+]

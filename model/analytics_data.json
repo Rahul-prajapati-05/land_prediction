@@ -1,0 +1,1106 @@
+{
+  "metrics": {
+    "r2_score": 0.8761,
+    "r2_percentage": 87.61,
+    "mae": 4057433.66,
+    "mse": 41498333114651.2,
+    "rmse": 6441919.99,
+    "mape": 28.74,
+    "intercept": 9429693.07
+  },
+  "dataset_stats": {
+    "total_records": 5000,
+    "training_records": 4000,
+    "testing_records": 1000,
+    "avg_price": 20039340.0,
+    "median_price": 13540000.0,
+    "min_price": 2110000.0,
+    "max_price": 153670000.0,
+    "avg_area_sqft": 1645.4916,
+    "min_area_sqft": 420.0,
+    "max_area_sqft": 6000.0,
+    "avg_bhk": 2.6546,
+    "avg_property_age": 6.5162,
+    "cities": [
+      "Ahmedabad",
+      "Bangalore",
+      "Chennai",
+      "Delhi",
+      "Hyderabad",
+      "Kolkata",
+      "Mumbai",
+      "Pune"
+    ],
+    "property_types": [
+      "Apartment",
+      "Independent House",
+      "Penthouse",
+      "Villa"
+    ],
+    "furnishing_types": [
+      "Furnished",
+      "Semi-Furnished",
+      "Unfurnished"
+    ]
+  },
+  "feature_importance": [
+    {
+      "feature": "City_Mumbai",
+      "coefficient": 22806009.623953413,
+      "formatted_coef": "\u20b9+22,806,009.62",
+      "impact": "Positive"
+    },
+    {
+      "feature": "Property_Type_Penthouse",
+      "coefficient": 14193581.583887601,
+      "formatted_coef": "\u20b9+14,193,581.58",
+      "impact": "Positive"
+    },
+    {
+      "feature": "Area_sqft",
+      "coefficient": 13394807.06563551,
+      "formatted_coef": "\u20b9+13,394,807.07",
+      "impact": "Positive"
+    },
+    {
+      "feature": "City_Delhi",
+      "coefficient": 12255721.042856835,
+      "formatted_coef": "\u20b9+12,255,721.04",
+      "impact": "Positive"
+    },
+    {
+      "feature": "City_Bangalore",
+      "coefficient": 7849541.325005897,
+      "formatted_coef": "\u20b9+7,849,541.33",
+      "impact": "Positive"
+    },
+    {
+      "feature": "Property_Type_Villa",
+      "coefficient": 7713008.866909806,
+      "formatted_coef": "\u20b9+7,713,008.87",
+      "impact": "Positive"
+    },
+    {
+      "feature": "City_Hyderabad",
+      "coefficient": 4228578.7468605535,
+      "formatted_coef": "\u20b9+4,228,578.75",
+      "impact": "Positive"
+    },
+    {
+      "feature": "City_Pune",
+      "coefficient": 3612938.1040086374,
+      "formatted_coef": "\u20b9+3,612,938.10",
+      "impact": "Positive"
+    },
+    {
+      "feature": "City_Chennai",
+      "coefficient": 3382491.999751528,
+      "formatted_coef": "\u20b9+3,382,492.00",
+      "impact": "Positive"
+    },
+    {
+      "feature": "BHK",
+      "coefficient": -2572479.276823696,
+      "formatted_coef": "\u20b9-2,572,479.28",
+      "impact": "Negative"
+    },
+    {
+      "feature": "Property_Type_Independent House",
+      "coefficient": 1571346.753859131,
+      "formatted_coef": "\u20b9+1,571,346.75",
+      "impact": "Positive"
+    },
+    {
+      "feature": "Property_Age",
+      "coefficient": -1104122.1941499067,
+      "formatted_coef": "\u20b9-1,104,122.19",
+      "impact": "Negative"
+    },
+    {
+      "feature": "Bathrooms",
+      "coefficient": 700677.4760244676,
+      "formatted_coef": "\u20b9+700,677.48",
+      "impact": "Positive"
+    },
+    {
+      "feature": "Furnishing_Semi-Furnished",
+      "coefficient": -621613.4232092074,
+      "formatted_coef": "\u20b9-621,613.42",
+      "impact": "Negative"
+    },
+    {
+      "feature": "City_Kolkata",
+      "coefficient": -600210.2024659138,
+      "formatted_coef": "\u20b9-600,210.20",
+      "impact": "Negative"
+    },
+    {
+      "feature": "Furnishing_Unfurnished",
+      "coefficient": -577264.4353607598,
+      "formatted_coef": "\u20b9-577,264.44",
+      "impact": "Negative"
+    },
+    {
+      "feature": "Floors",
+      "coefficient": 482048.162795278,
+      "formatted_coef": "\u20b9+482,048.16",
+      "impact": "Positive"
+    },
+    {
+      "feature": "Parking_Yes",
+      "coefficient": 428910.41403584206,
+      "formatted_coef": "\u20b9+428,910.41",
+      "impact": "Positive"
+    }
+  ],
+  "chart_data": {
+    "actual_vs_predicted": [
+      {
+        "actual": 15280000,
+        "predicted": 14812590.0,
+        "area": 1493,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 19860000,
+        "predicted": 19682814.0,
+        "area": 1747,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 65590000,
+        "predicted": 56587643.0,
+        "area": 3823,
+        "city": "Delhi"
+      },
+      {
+        "actual": 9230000,
+        "predicted": 19107766.0,
+        "area": 526,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 27500000,
+        "predicted": 31515074.0,
+        "area": 1730,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 9530000,
+        "predicted": 7121147.0,
+        "area": 1299,
+        "city": "Pune"
+      },
+      {
+        "actual": 16210000,
+        "predicted": 16881990.0,
+        "area": 1719,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 5880000,
+        "predicted": 828297.0,
+        "area": 1025,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 11560000,
+        "predicted": 12050756.0,
+        "area": 1130,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 18470000,
+        "predicted": 18475072.0,
+        "area": 2019,
+        "city": "Pune"
+      },
+      {
+        "actual": 63320000,
+        "predicted": 52929925.0,
+        "area": 3654,
+        "city": "Delhi"
+      },
+      {
+        "actual": 6760000,
+        "predicted": 2691272.0,
+        "area": 857,
+        "city": "Chennai"
+      },
+      {
+        "actual": 21900000,
+        "predicted": 26864592.0,
+        "area": 2673,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 4860000,
+        "predicted": 1318449.0,
+        "area": 602,
+        "city": "Pune"
+      },
+      {
+        "actual": 11570000,
+        "predicted": 9132085.0,
+        "area": 1145,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 13460000,
+        "predicted": 13316532.0,
+        "area": 1766,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 6380000,
+        "predicted": 1108047.0,
+        "area": 985,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 9160000,
+        "predicted": 6617167.0,
+        "area": 1062,
+        "city": "Pune"
+      },
+      {
+        "actual": 41690000,
+        "predicted": 41782062.0,
+        "area": 2985,
+        "city": "Delhi"
+      },
+      {
+        "actual": 12550000,
+        "predicted": 12695490.0,
+        "area": 1205,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 94040000,
+        "predicted": 64511255.0,
+        "area": 3466,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 45960000,
+        "predicted": 45817013.0,
+        "area": 3638,
+        "city": "Delhi"
+      },
+      {
+        "actual": 14240000,
+        "predicted": 15699692.0,
+        "area": 1206,
+        "city": "Delhi"
+      },
+      {
+        "actual": 10560000,
+        "predicted": 6855969.0,
+        "area": 1301,
+        "city": "Pune"
+      },
+      {
+        "actual": 22400000,
+        "predicted": 34210565.0,
+        "area": 2991,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 10370000,
+        "predicted": 7770794.0,
+        "area": 1175,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 10340000,
+        "predicted": 9637550.0,
+        "area": 998,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 34030000,
+        "predicted": 39419101.0,
+        "area": 2427,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 16450000,
+        "predicted": 19068067.0,
+        "area": 1995,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 3790000,
+        "predicted": -2398158.0,
+        "area": 670,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 22610000,
+        "predicted": 26594773.0,
+        "area": 1292,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 65280000,
+        "predicted": 55639679.0,
+        "area": 3671,
+        "city": "Delhi"
+      },
+      {
+        "actual": 12230000,
+        "predicted": 11546489.0,
+        "area": 1510,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 59490000,
+        "predicted": 53876468.0,
+        "area": 3449,
+        "city": "Delhi"
+      },
+      {
+        "actual": 45870000,
+        "predicted": 48044925.0,
+        "area": 3273,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 18040000,
+        "predicted": 18625130.0,
+        "area": 1584,
+        "city": "Delhi"
+      },
+      {
+        "actual": 47550000,
+        "predicted": 62244348.0,
+        "area": 4312,
+        "city": "Chennai"
+      },
+      {
+        "actual": 97050000,
+        "predicted": 68569887.0,
+        "area": 3350,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 5450000,
+        "predicted": 4441002.0,
+        "area": 598,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 8210000,
+        "predicted": 5074414.0,
+        "area": 1014,
+        "city": "Chennai"
+      },
+      {
+        "actual": 18740000,
+        "predicted": 20166183.0,
+        "area": 1549,
+        "city": "Delhi"
+      },
+      {
+        "actual": 6640000,
+        "predicted": 2642954.0,
+        "area": 855,
+        "city": "Pune"
+      },
+      {
+        "actual": 9930000,
+        "predicted": 9729912.0,
+        "area": 1082,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 11340000,
+        "predicted": 10042763.0,
+        "area": 1785,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 42470000,
+        "predicted": 54016049.0,
+        "area": 4258,
+        "city": "Chennai"
+      },
+      {
+        "actual": 20110000,
+        "predicted": 24817615.0,
+        "area": 1174,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 11360000,
+        "predicted": 14095980.0,
+        "area": 2010,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 8080000,
+        "predicted": 10289638.0,
+        "area": 625,
+        "city": "Delhi"
+      },
+      {
+        "actual": 7150000,
+        "predicted": 6095191.0,
+        "area": 643,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 8370000,
+        "predicted": 18491709.0,
+        "area": 452,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 5770000,
+        "predicted": 4049127.0,
+        "area": 466,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 6280000,
+        "predicted": 3849474.0,
+        "area": 704,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 19660000,
+        "predicted": 32414452.0,
+        "area": 2311,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 4370000,
+        "predicted": -1315099.0,
+        "area": 597,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 39930000,
+        "predicted": 37696138.0,
+        "area": 2207,
+        "city": "Delhi"
+      },
+      {
+        "actual": 21850000,
+        "predicted": 27500798.0,
+        "area": 1121,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 6080000,
+        "predicted": 3885000.0,
+        "area": 1237,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 9410000,
+        "predicted": 9392725.0,
+        "area": 1022,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 17960000,
+        "predicted": 21062297.0,
+        "area": 2462,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 9300000,
+        "predicted": 6882314.0,
+        "area": 1333,
+        "city": "Pune"
+      },
+      {
+        "actual": 4060000,
+        "predicted": -1005528.0,
+        "area": 480,
+        "city": "Chennai"
+      },
+      {
+        "actual": 41530000,
+        "predicted": 39310036.0,
+        "area": 2298,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 19420000,
+        "predicted": 24388012.0,
+        "area": 1325,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 16730000,
+        "predicted": 14468618.0,
+        "area": 1483,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 12310000,
+        "predicted": 12833650.0,
+        "area": 905,
+        "city": "Delhi"
+      },
+      {
+        "actual": 41990000,
+        "predicted": 40227878.0,
+        "area": 2451,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 16220000,
+        "predicted": 24063204.0,
+        "area": 1097,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 4810000,
+        "predicted": 248148.0,
+        "area": 546,
+        "city": "Chennai"
+      },
+      {
+        "actual": 36280000,
+        "predicted": 36535768.0,
+        "area": 2122,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 11780000,
+        "predicted": 12336421.0,
+        "area": 1644,
+        "city": "Chennai"
+      },
+      {
+        "actual": 4570000,
+        "predicted": 519287.0,
+        "area": 737,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 14970000,
+        "predicted": 16928840.0,
+        "area": 1223,
+        "city": "Delhi"
+      },
+      {
+        "actual": 6590000,
+        "predicted": 1629582.0,
+        "area": 756,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 22400000,
+        "predicted": 23752927.0,
+        "area": 1369,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 11230000,
+        "predicted": 12584516.0,
+        "area": 984,
+        "city": "Delhi"
+      },
+      {
+        "actual": 7190000,
+        "predicted": 3931816.0,
+        "area": 928,
+        "city": "Pune"
+      },
+      {
+        "actual": 46500000,
+        "predicted": 49538900.0,
+        "area": 3364,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 10440000,
+        "predicted": 9210985.0,
+        "area": 1594,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 12190000,
+        "predicted": 12777402.0,
+        "area": 1255,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 20760000,
+        "predicted": 27716143.0,
+        "area": 1199,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 13900000,
+        "predicted": 14193083.0,
+        "area": 1549,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 8440000,
+        "predicted": 19226914.0,
+        "area": 493,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 8700000,
+        "predicted": 10665837.0,
+        "area": 647,
+        "city": "Delhi"
+      },
+      {
+        "actual": 5210000,
+        "predicted": -218133.0,
+        "area": 575,
+        "city": "Pune"
+      },
+      {
+        "actual": 11740000,
+        "predicted": 12295000.0,
+        "area": 1659,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 111120000,
+        "predicted": 79459314.0,
+        "area": 4635,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 6210000,
+        "predicted": 1289215.0,
+        "area": 1149,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 5110000,
+        "predicted": 2011472.0,
+        "area": 622,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 6470000,
+        "predicted": 1825415.0,
+        "area": 1076,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 31040000,
+        "predicted": 33659208.0,
+        "area": 2218,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 70540000,
+        "predicted": 70170706.0,
+        "area": 4634,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 7210000,
+        "predicted": 3934368.0,
+        "area": 899,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 7700000,
+        "predicted": 9805984.0,
+        "area": 572,
+        "city": "Delhi"
+      },
+      {
+        "actual": 34140000,
+        "predicted": 35642112.0,
+        "area": 1939,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 12700000,
+        "predicted": 12357357.0,
+        "area": 1586,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 8530000,
+        "predicted": 3904799.0,
+        "area": 1213,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 6480000,
+        "predicted": 4774760.0,
+        "area": 1219,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 17030000,
+        "predicted": 15557168.0,
+        "area": 1623,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 13390000,
+        "predicted": 15988261.0,
+        "area": 1105,
+        "city": "Delhi"
+      },
+      {
+        "actual": 114040000,
+        "predicted": 77699618.0,
+        "area": 3958,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 3490000,
+        "predicted": -2316694.0,
+        "area": 615,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 41270000,
+        "predicted": 48755786.0,
+        "area": 3762,
+        "city": "Pune"
+      },
+      {
+        "actual": 6570000,
+        "predicted": 4584475.0,
+        "area": 1168,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 29320000,
+        "predicted": 42583748.0,
+        "area": 4054,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 13200000,
+        "predicted": 13744106.0,
+        "area": 988,
+        "city": "Delhi"
+      },
+      {
+        "actual": 14620000,
+        "predicted": 15534989.0,
+        "area": 1923,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 18120000,
+        "predicted": 22086293.0,
+        "area": 2619,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 21500000,
+        "predicted": 26152595.0,
+        "area": 1174,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 15000000,
+        "predicted": 13765421.0,
+        "area": 1412,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 24470000,
+        "predicted": 25961752.0,
+        "area": 2002,
+        "city": "Delhi"
+      },
+      {
+        "actual": 44500000,
+        "predicted": 42278955.0,
+        "area": 2608,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 12710000,
+        "predicted": 11934056.0,
+        "area": 1579,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 10700000,
+        "predicted": 20074322.0,
+        "area": 605,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 11860000,
+        "predicted": 14114863.0,
+        "area": 1003,
+        "city": "Delhi"
+      },
+      {
+        "actual": 36790000,
+        "predicted": 36271276.0,
+        "area": 1758,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 8720000,
+        "predicted": 8262302.0,
+        "area": 1186,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 49020000,
+        "predicted": 45348174.0,
+        "area": 2682,
+        "city": "Delhi"
+      },
+      {
+        "actual": 67820000,
+        "predicted": 52680859.0,
+        "area": 2456,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 8260000,
+        "predicted": 6794894.0,
+        "area": 1208,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 21400000,
+        "predicted": 23266494.0,
+        "area": 1748,
+        "city": "Delhi"
+      },
+      {
+        "actual": 20230000,
+        "predicted": 21091581.0,
+        "area": 1672,
+        "city": "Delhi"
+      },
+      {
+        "actual": 9760000,
+        "predicted": 7309228.0,
+        "area": 1410,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 16700000,
+        "predicted": 17753854.0,
+        "area": 1659,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 9940000,
+        "predicted": 7387193.0,
+        "area": 940,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 12470000,
+        "predicted": 22047475.0,
+        "area": 732,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 76420000,
+        "predicted": 62927950.0,
+        "area": 3388,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 14040000,
+        "predicted": 14401021.0,
+        "area": 1767,
+        "city": "Chennai"
+      },
+      {
+        "actual": 17030000,
+        "predicted": 17822893.0,
+        "area": 1697,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 11320000,
+        "predicted": 11251974.0,
+        "area": 1629,
+        "city": "Pune"
+      },
+      {
+        "actual": 8620000,
+        "predicted": 6743304.0,
+        "area": 1175,
+        "city": "Chennai"
+      },
+      {
+        "actual": 14350000,
+        "predicted": 13377884.0,
+        "area": 1231,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 16860000,
+        "predicted": 16729527.0,
+        "area": 1495,
+        "city": "Delhi"
+      },
+      {
+        "actual": 11490000,
+        "predicted": 10314401.0,
+        "area": 1005,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 8400000,
+        "predicted": 5923284.0,
+        "area": 1231,
+        "city": "Chennai"
+      },
+      {
+        "actual": 5530000,
+        "predicted": -323151.0,
+        "area": 914,
+        "city": "Kolkata"
+      },
+      {
+        "actual": 3530000,
+        "predicted": -520734.0,
+        "area": 716,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 6920000,
+        "predicted": 4753010.0,
+        "area": 947,
+        "city": "Chennai"
+      },
+      {
+        "actual": 42560000,
+        "predicted": 42560807.0,
+        "area": 3115,
+        "city": "Delhi"
+      },
+      {
+        "actual": 11880000,
+        "predicted": 12649223.0,
+        "area": 1695,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 24960000,
+        "predicted": 30831173.0,
+        "area": 2235,
+        "city": "Hyderabad"
+      },
+      {
+        "actual": 25600000,
+        "predicted": 26736690.0,
+        "area": 2123,
+        "city": "Delhi"
+      },
+      {
+        "actual": 13050000,
+        "predicted": 12881244.0,
+        "area": 1226,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 26270000,
+        "predicted": 35349780.0,
+        "area": 2188,
+        "city": "Pune"
+      },
+      {
+        "actual": 13270000,
+        "predicted": 12814442.0,
+        "area": 1599,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 14920000,
+        "predicted": 15423156.0,
+        "area": 1638,
+        "city": "Pune"
+      },
+      {
+        "actual": 9870000,
+        "predicted": 20222400.0,
+        "area": 571,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 16740000,
+        "predicted": 15917105.0,
+        "area": 1519,
+        "city": "Bangalore"
+      },
+      {
+        "actual": 40530000,
+        "predicted": 43629630.0,
+        "area": 2800,
+        "city": "Mumbai"
+      },
+      {
+        "actual": 4490000,
+        "predicted": 518041.0,
+        "area": 756,
+        "city": "Ahmedabad"
+      },
+      {
+        "actual": 15330000,
+        "predicted": 16594290.0,
+        "area": 2062,
+        "city": "Pune"
+      }
+    ],
+    "price_distribution": {
+      "bins": [
+        "\u20b921-147L",
+        "\u20b9147-273L",
+        "\u20b9273-400L",
+        "\u20b9400-526L",
+        "\u20b9526-652L",
+        "\u20b9652-778L",
+        "\u20b9778-905L",
+        "\u20b9905-1031L",
+        "\u20b91031-1157L",
+        "\u20b91157-1284L",
+        "\u20b91284-1410L",
+        "\u20b91410-1536L"
+      ],
+      "counts": [
+        2677,
+        1276,
+        493,
+        246,
+        124,
+        76,
+        45,
+        32,
+        20,
+        5,
+        3,
+        3
+      ]
+    },
+    "city_avg_price": {
+      "Mumbai": 33984737.0,
+      "Delhi": 24358192.0,
+      "Bangalore": 19139107.0,
+      "Hyderabad": 14624241.0,
+      "Chennai": 14325698.0,
+      "Pune": 14271791.0,
+      "Kolkata": 11921502.0,
+      "Ahmedabad": 9623902.0
+    },
+    "type_avg_price": {
+      "Penthouse": 58931009.0,
+      "Villa": 45412112.0,
+      "Independent House": 23911923.0,
+      "Apartment": 12057439.0
+    }
+  }
+}
