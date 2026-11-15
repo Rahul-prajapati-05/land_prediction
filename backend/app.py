@@ -27,8 +27,24 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODEL_PATH = os.path.join(BASE_DIR, 'model', 'house_price_model.joblib')
 ANALYTICS_PATH = os.path.join(BASE_DIR, 'model', 'analytics_data.json')
 DATASET_PATH = os.path.join(BASE_DIR, 'dataset', 'house_prices.csv')
-STATIC_DIST_PATH = os.path.join(BASE_DIR, 'frontend', 'dist')
 
+def get_static_dist_path():
+    possible_paths = [
+        os.path.join(BASE_DIR, 'frontend', 'dist'),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist'),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static'),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'frontend', 'dist'),
+        os.path.join(os.getcwd(), 'frontend', 'dist'),
+        os.path.join(os.getcwd(), 'backend', 'dist'),
+        os.path.join(os.getcwd(), 'dist'),
+    ]
+    for p in possible_paths:
+        abs_p = os.path.abspath(p)
+        if os.path.exists(abs_p) and os.path.exists(os.path.join(abs_p, 'index.html')):
+            return abs_p
+    return None
+
+STATIC_DIST_PATH = get_static_dist_path()
 app = Flask(__name__, static_folder=STATIC_DIST_PATH, static_url_path='')
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
@@ -61,13 +77,16 @@ load_ml_artifacts()
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """Health check endpoint providing status of backend & ML model."""
+    dist_dir = get_static_dist_path()
     return jsonify({
         'status': 'healthy',
         'timestamp': datetime.now().isoformat(),
         'model_loaded': MODEL_PIPELINE is not None,
         'algorithm': 'Linear Regression (Ordinary Least Squares)',
         'framework': 'Scikit-learn',
-        'version': '1.0.0'
+        'version': '1.0.1-dist-v2',
+        'frontend_dist_found': dist_dir is not None,
+        'frontend_dist_path': dist_dir
     }), 200
 
 @app.route('/api/predict', methods=['POST'])
@@ -282,10 +301,13 @@ def download_dataset():
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve_frontend(path):
-    if STATIC_DIST_PATH and os.path.exists(STATIC_DIST_PATH):
-        if path != "" and os.path.exists(os.path.join(STATIC_DIST_PATH, path)):
-            return send_from_directory(STATIC_DIST_PATH, path)
-        index_file = os.path.join(STATIC_DIST_PATH, 'index.html')
+    dist_dir = get_static_dist_path()
+    if dist_dir:
+        if path != "":
+            target_file = os.path.join(dist_dir, path)
+            if os.path.exists(target_file) and os.path.isfile(target_file):
+                return send_from_directory(dist_dir, path)
+        index_file = os.path.join(dist_dir, 'index.html')
         if os.path.exists(index_file):
             return send_file(index_file)
             
@@ -297,6 +319,7 @@ def serve_frontend(path):
             '/api/predict',
             '/api/history',
             '/api/analytics',
+            '/api/contact',
             '/api/download-dataset'
         ],
         'note': 'Frontend is running separately on Vite dev server (default port 5173) or can be built into frontend/dist.'
